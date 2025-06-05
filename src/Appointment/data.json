@@ -1,0 +1,12 @@
+{
+  "orders": [
+    { "Order ID": "101", "Patient": "Alice", "Date": "2025-05-01" },
+    { "Order ID": "102", "Patient": "Bob", "Date": "2025-05-03" }
+  ],
+  "history": [
+    { "Visit ID": "V201", "Doctor": "Dr. Smith", "Date": "2025-04-21" }
+  ],
+  "profile": [
+    { "Name": "Alice", "Email": "alice@example.com", "Phone": "1234567890" }
+  ]
+}
