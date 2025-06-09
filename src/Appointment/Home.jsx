@@ -4,6 +4,9 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import BookAppointment from './BookAppointment';
+import History from './History';
+import Contact from './Contact';
+import About from './About';
 
 const Home = () => {
   return (
@@ -15,6 +18,9 @@ const Home = () => {
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="book" element={<BookAppointment />} />
+            <Route path="history" element={<History />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
           </Routes>
         </main>
       </div>
@@ -23,13 +29,15 @@ const Home = () => {
   );
 };
 
+
 const Welcome = () => {
   const username = sessionStorage.getItem('username');
+
   return (
-    <>
+    <div>
       <h2>Welcome {username}</h2>
-      <img src="./homeimage.png" alt="Welcome" className="img-fluid mt-3" />
-    </>
+      <img src="/homeimage.png" alt="Welcome" />
+    </div>
   );
 };
 
